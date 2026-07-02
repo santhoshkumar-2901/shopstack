@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { useProductStore } from "../store/useProductStore";
 
 function ProductCard({ product }) {
+
+    const {deleteProduct} = useProductStore();
+
   return (
     <div className="card bg-base-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
       <figure className="relative pt-[56.25%]">
@@ -26,7 +29,7 @@ function ProductCard({ product }) {
           >
             <EditIcon className="size-4" />
           </Link>
-          <button className="btn btn-error btn-sm btn-outline">
+          <button className="btn btn-error btn-sm btn-outline" onClick={() => deleteProduct(product.id)}>
             <Trash2Icon className="size-4" />
           </button>
         </div>
