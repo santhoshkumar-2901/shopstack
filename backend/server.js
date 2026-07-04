@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 const __dirname = path.resolve();
 
 app.use(express.json());
-app.use(helmet());
+app.use(helmet({contentSecurityPolicy: false}));
 app.use(morgan("dev"));
 app.use(cors());
 
@@ -58,11 +58,11 @@ app.use(async (req, res, next) => {
 app.use("/api/products", productRoutes);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.use(express.static(path.join(__dirname, "frontend/dist")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
-  });
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend/dist/index.html"));
+});
 }
 
 async function initDb() {

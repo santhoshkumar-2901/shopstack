@@ -178,7 +178,7 @@ function Product() {
         </div>
       </div>
 
-      {/* Delete Confirmation Modal */}
+      
       <dialog id="delete_modal" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">Delete Product</h3>
