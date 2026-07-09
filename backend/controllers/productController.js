@@ -44,7 +44,7 @@ export const getProduct = async (req, res) => {
         `;
 
     if (product.length === 0) {
-      res.status(404).json({ success: false, msg: "Product not found" });
+      return res.status(404).json({ success: false, msg: "Product not found" });
     }
     res.status(200).json({ success: true, data: product[0] });
   } catch (error) {
@@ -65,7 +65,7 @@ export const updateProduct = async (req, res) => {
         `;
 
     if (updatedProduct === 0) {
-      res.status(404).json({ success: false, msg: "Product not found" });
+      return res.status(404).json({ success: false, msg: "Product not found" });
     }
 
     res.status(200).json({ success: true, data: updatedProduct[0] });
