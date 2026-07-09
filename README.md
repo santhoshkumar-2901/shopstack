@@ -13,6 +13,7 @@ A modern full-stack **Product Management System** built with the **PERN Stack (P
 ## 🔗 Live Demo
 
 🌐 **Live Website:** https://shopstack-885w.onrender.com
+> **Note:** This application is hosted on Render's free tier. The initial request may take 30–60 seconds while the server wakes up.
 
 ---
 
