@@ -1,51 +1,67 @@
 # 🛍️ ShopStack
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://shopstack-885w.onrender.com)
+[![Source Code](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/santhoshkumar-2901/shopstack)
 
-![React](https://img.shields.io/badge/React-19-blue?logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-blue?logo=postgresql)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-4169E1?logo=postgresql)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A modern full-stack product management application built with the **PERN Stack (PostgreSQL, Express.js, React, Node.js)**. ShopStack provides a clean and responsive interface for managing products with complete CRUD functionality.
+A modern full-stack **Product Management System** built with the **PERN Stack (PostgreSQL, Express.js, React, Node.js)**. ShopStack allows users to manage products through a clean, responsive interface with complete CRUD functionality and persistent PostgreSQL storage.
+
+## 🔗 Live Demo
+
+🌐 **Live Website:** https://shopstack-885w.onrender.com
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- ✨ Create new products
-- 📦 View all products
-- ✏️ Update product details
-- 🗑️ Delete products
-- 🎨 Responsive and modern UI
-- 🌙 Dark/Light theme support
-- 🔔 Toast notifications
-- ⚡ Fast state management with Zustand
-- 🗄️ PostgreSQL database
-- 🌱 Database seeding
+- ✅ Create products
+- ✅ View all products
+- ✅ Edit product details
+- ✅ Delete products
+- ✅ Responsive UI
+- ✅ Dark & Light mode
+- ✅ Toast notifications
+- ✅ Zustand state management
+- ✅ RESTful API
+- ✅ PostgreSQL (Neon Database)
+- ✅ Error handling
+- ✅ Database seeding
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React
+
+- React 19
 - Vite
 - Zustand
-- React Router
 - Axios
+- React Router
 - Tailwind CSS
 - DaisyUI
 - Lucide React
 - React Hot Toast
 
 ### Backend
+
 - Node.js
 - Express.js
 - PostgreSQL
 - Neon Database
 
+### Deployment
+
+- Platform: Render
+- Database: Neon PostgreSQL
+
 ---
 
-## 📁 Project Structure
+## 📂 Folder Structure
 
 ```text
 ShopStack/
@@ -53,7 +69,6 @@ ShopStack/
 ├── backend/
 ├── frontend/
 ├── screenshots/
-├── .gitignore
 ├── package.json
 ├── package-lock.json
 └── README.md
@@ -61,23 +76,23 @@ ShopStack/
 
 ---
 
-## ⚙️ Installation
+## 🚀 Getting Started
 
-### 1. Clone the repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/santhoshkumar-2901/shopstack.git
 cd shopstack
 ```
 
-### Install backend dependencies
+### Install Backend
 
 ```bash
 cd backend
 npm install
 ```
 
-### Install frontend dependencies
+### Install Frontend
 
 ```bash
 cd ../frontend
@@ -88,7 +103,7 @@ npm install
 
 ## 🔐 Environment Variables
 
-Create a `.env` file inside the `backend` directory.
+Create a `.env` file inside the backend folder.
 
 ```env
 PORT=3000
@@ -98,18 +113,16 @@ DATABASE_URL=postgresql://username:password@host/database?sslmode=require
 
 ---
 
-## ▶️ Running the Project
+## ▶️ Run Locally
 
-Open two terminal windows.
-
-### Terminal 1 - Backend
+### Backend
 
 ```bash
 cd backend
 npm run dev
 ```
 
-### Terminal 2 - Frontend
+### Frontend
 
 ```bash
 cd frontend
@@ -118,7 +131,7 @@ npm run dev
 
 ---
 
-## 🌱 Seed the Database
+## 🌱 Seed Database
 
 ```bash
 cd backend
@@ -127,65 +140,53 @@ node seeds/products.js
 
 ---
 
-## 📡 API Endpoints
+## 📡 REST API
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| GET | `/api/products` | Get all products |
-| GET | `/api/products/:id` | Get a single product |
-| POST | `/api/products` | Create a product |
-| PUT | `/api/products/:id` | Update a product |
-| DELETE | `/api/products/:id` | Delete a product |
+| GET | `/api/products` | Fetch all products |
+| GET | `/api/products/:id` | Fetch single product |
+| POST | `/api/products` | Create product |
+| PUT | `/api/products/:id` | Update product |
+| DELETE | `/api/products/:id` | Delete product |
 
 ---
 
 ## 📸 Screenshots
 
-### Home Page
+### Home
 
-![Home Page](./screenshots/Home.png)
+![Home](./screenshots/Home.png)
 
-### Product Page
+### Product List
 
-![Home Page With Products](./screenshots/Home-Page-With-Products.png)
+![Products](./screenshots/Home-Page-With-Products.png)
 
-### Add Product Modal
+### Add Product
 
-![Add Product Modal](./screenshots/Add-Product-Modal.png)
+![Add Product](./screenshots/Add-Product-Modal.png)
 
 ### Edit Product
 
 ![Edit Product](./screenshots/Edit-Product.png)
 
-### Delete Product Modal
+### Delete Product
 
-![Delete Product Modal](./screenshots/Delete-Product-Modal.png)
+![Delete Product](./screenshots/Delete-Product-Modal.png)
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Future Enhancements
 
-- User authentication
-- Product search
-- Product categories
+- User Authentication (JWT)
+- Product Search
+- Product Categories
+- Image Uploads
 - Pagination
-- Image uploads
-- Dashboard analytics
-- Docker support
-- Unit and integration testing
-- CI/CD pipeline
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome. Feel free to open an issue or submit a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+- Dashboard Analytics
+- Docker Support
+- Unit & Integration Testing
+- CI/CD Pipeline
 
 ---
 
@@ -194,3 +195,13 @@ This project is licensed under the MIT License.
 **Santhosh Kumar**
 
 GitHub: https://github.com/santhoshkumar-2901
+
+LinkedIn: https://linkedin.com/in/s-santhosh-kumar-dev
+
+Portfolio: https://portfolio-six-ashy-33.vercel.app
+
+---
+
+## 📄 License
+
+Licensed under the MIT License.
